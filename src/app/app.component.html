@@ -1,0 +1,19 @@
+	<div id="container">
+        <div id="controls">
+            <mat-card>
+                <ng-container *ngIf="nodes === undefined && !nodeCount">
+                    <mat-form-field>
+                        <input matInput #nodes placeholder="Number of items">
+                    </mat-form-field>
+                    <button mat-raised-button (click)="nodesAdded(nodes.value)" color="primary">Go</button>
+                </ng-container>
+                <ng-container *ngIf="nodeCount">
+                    <button mat-raised-button (click)="update()" color="primary">Process</button>
+                    <button mat-raised-button id="success" (click)=success()>Success</button>
+                    <button mat-raised-button id="error" (click)=error()>Error</button>
+                </ng-container>
+            </mat-card>
+        </div>
+
+        <div id="svg-container"></div> 
+	</div>

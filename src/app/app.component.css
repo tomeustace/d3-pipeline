@@ -1,0 +1,27 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#container mat-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#svg-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+#controls button {
+    margin: 5px;
+}
+
